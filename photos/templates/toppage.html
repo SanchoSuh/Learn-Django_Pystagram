@@ -1,0 +1,28 @@
+{% load static from staticfiles %}
+
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title> 첫화면 </title>
+    </head>
+
+    <body class = "container">
+
+        {% for photo in object_list %}
+
+        <div class="photo_container">
+            <p>
+                <a href="{% url 'photos:view_photo' pk=photo.pk %}">
+                    <img src="{{ photo.image.url }}" />
+                </a>
+            </p>
+
+        </div>
+
+        {% empty %}
+        <p>게시물이 없네요</p>
+
+        {% endfor %}
+
+    </body>
+</html>

@@ -1,0 +1,32 @@
+{% load static from staticfiles %}
+{% load my_tags %}
+
+<html>
+    <head></head>
+        <title> {{ photo.pk }} 번 사진 게시물</title>
+    <body>
+        {% addnim %}
+        작성자 : {{ request.user }}
+        {% end_add_nim %}
+
+        {% for msg in messages %}
+        <p> {{ msg }} </p>
+        {% endfor %}
+
+        <p><img src="{{ photo.image.url }}"></p>
+
+        <p>
+            <a href="{% url 'photos:like_photo' pk=photo.pk %}">
+                {% if photo|did_like:request.user %}
+                    좋아요 취소
+                {% else %}
+                    좋아요
+                {% endif %}
+            </a>
+        </p>
+        <div>
+            {{ photo.content }}
+        </div>
+
+    </body>
+</html>

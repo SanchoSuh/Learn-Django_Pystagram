@@ -1,0 +1,598 @@
+WARNING 2016-03-12 08:08:19,384 views 44099 4583735296 warning message log
+WARNING 2016-03-12 08:09:51,767 views 44099 4583735296 warning message log
+WARNING 2016-03-12 08:09:56,033 views 44099 4583735296 warning message log
+WARNING 2016-03-12 08:09:59,212 base 44099 4583735296 Not Found: /photos/sss
+ERROR 2016-03-12 08:10:39,498 base 44099 4583735296 Internal Server Error: /photos/2/
+Traceback (most recent call last):
+  File "/Users/coupang/Fastcamp/hwenv/lib/python3.5/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/coupang/Fastcamp/hwenv/lib/python3.5/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/coupang/Fastcamp/hwenv/pystagram/photos/views.py", line 24, in view_photo
+    'photo' : photo,
+NameError: name 'photo' is not defined
+ERROR 2016-03-12 08:11:35,638 base 44128 4526452736 Internal Server Error: /photos/2/
+Traceback (most recent call last):
+  File "/Users/coupang/Fastcamp/hwenv/lib/python3.5/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/coupang/Fastcamp/hwenv/lib/python3.5/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/coupang/Fastcamp/hwenv/pystagram/photos/views.py", line 27, in view_photo
+    return render(request, 'view_photo.html', ctx)
+  File "/Users/coupang/Fastcamp/hwenv/lib/python3.5/site-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/Users/coupang/Fastcamp/hwenv/lib/python3.5/site-packages/django/template/loader.py", line 96, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/Users/coupang/Fastcamp/hwenv/lib/python3.5/site-packages/django/template/loader.py", line 43, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: view_photo.html
+ERROR 2016-03-12 08:11:41,872 base 44128 4526452736 Internal Server Error: /photos/2/
+Traceback (most recent call last):
+  File "/Users/coupang/Fastcamp/hwenv/lib/python3.5/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/coupang/Fastcamp/hwenv/lib/python3.5/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/coupang/Fastcamp/hwenv/pystagram/photos/views.py", line 27, in view_photo
+    return render(request, 'view_photo.html', ctx)
+  File "/Users/coupang/Fastcamp/hwenv/lib/python3.5/site-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/Users/coupang/Fastcamp/hwenv/lib/python3.5/site-packages/django/template/loader.py", line 96, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/Users/coupang/Fastcamp/hwenv/lib/python3.5/site-packages/django/template/loader.py", line 43, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: view_photo.html
+WARNING 2016-03-12 08:16:59,953 views 44163 4465451008 warning message log
+ERROR 2016-03-12 08:17:01,110 base 44163 4465451008 Internal Server Error: /photos/3/
+Traceback (most recent call last):
+  File "/Users/coupang/Fastcamp/hwenv/lib/python3.5/site-packages/django/template/defaulttags.py", line 507, in render
+    current_app=current_app)
+  File "/Users/coupang/Fastcamp/hwenv/lib/python3.5/site-packages/django/core/urlresolvers.py", line 600, in reverse
+    return force_text(iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs)))
+  File "/Users/coupang/Fastcamp/hwenv/lib/python3.5/site-packages/django/core/urlresolvers.py", line 508, in _reverse_with_prefix
+    (lookup_view_s, args, kwargs, len(patterns), patterns))
+django.core.urlresolvers.NoReverseMatch: Reverse for 'pystagram.view_photo' with arguments '()' and keyword arguments '{'pk': 3}' not found. 0 pattern(s) tried: []
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/coupang/Fastcamp/hwenv/lib/python3.5/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/coupang/Fastcamp/hwenv/lib/python3.5/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/coupang/Fastcamp/hwenv/pystagram/photos/views.py", line 27, in view_photo
+    return render(request, 'view_photo.html', ctx)
+  File "/Users/coupang/Fastcamp/hwenv/lib/python3.5/site-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/Users/coupang/Fastcamp/hwenv/lib/python3.5/site-packages/django/template/loader.py", line 97, in render_to_string
+    return template.render(context, request)
+  File "/Users/coupang/Fastcamp/hwenv/lib/python3.5/site-packages/django/template/backends/django.py", line 95, in render
+    return self.template.render(context)
+  File "/Users/coupang/Fastcamp/hwenv/lib/python3.5/site-packages/django/template/base.py", line 206, in render
+    return self._render(context)
+  File "/Users/coupang/Fastcamp/hwenv/lib/python3.5/site-packages/django/template/base.py", line 197, in _render
+    return self.nodelist.render(context)
+  File "/Users/coupang/Fastcamp/hwenv/lib/python3.5/site-packages/django/template/base.py", line 992, in render
+    bit = node.render_annotated(context)
+  File "/Users/coupang/Fastcamp/hwenv/lib/python3.5/site-packages/django/template/base.py", line 959, in render_annotated
+    return self.render(context)
+  File "/Users/coupang/Fastcamp/hwenv/lib/python3.5/site-packages/django/template/defaulttags.py", line 513, in render
+    six.reraise(*exc_info)
+  File "/Users/coupang/Fastcamp/hwenv/lib/python3.5/site-packages/django/utils/six.py", line 686, in reraise
+    raise value
+  File "/Users/coupang/Fastcamp/hwenv/lib/python3.5/site-packages/django/template/defaulttags.py", line 499, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/Users/coupang/Fastcamp/hwenv/lib/python3.5/site-packages/django/core/urlresolvers.py", line 600, in reverse
+    return force_text(iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs)))
+  File "/Users/coupang/Fastcamp/hwenv/lib/python3.5/site-packages/django/core/urlresolvers.py", line 508, in _reverse_with_prefix
+    (lookup_view_s, args, kwargs, len(patterns), patterns))
+django.core.urlresolvers.NoReverseMatch: Reverse for 'view_photo' with arguments '()' and keyword arguments '{'pk': 3}' not found. 0 pattern(s) tried: []
+WARNING 2016-03-12 08:38:25,082 views 44459 4345749504 warning message log
+ERROR 2016-03-12 08:38:25,085 base 44459 4345749504 Internal Server Error: /photos/
+Traceback (most recent call last):
+  File "/Users/coupang/Fastcamp/hwenv/lib/python3.5/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/coupang/Fastcamp/hwenv/lib/python3.5/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/coupang/Fastcamp/hwenv/pystagram/photos/views.py", line 21, in toppage
+    return render(request, 'toppage.html', ctx)
+  File "/Users/coupang/Fastcamp/hwenv/lib/python3.5/site-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/Users/coupang/Fastcamp/hwenv/lib/python3.5/site-packages/django/template/loader.py", line 96, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/Users/coupang/Fastcamp/hwenv/lib/python3.5/site-packages/django/template/loader.py", line 32, in get_template
+    return engine.get_template(template_name, dirs)
+  File "/Users/coupang/Fastcamp/hwenv/lib/python3.5/site-packages/django/template/backends/django.py", line 40, in get_template
+    return Template(self.engine.get_template(template_name, dirs), self)
+  File "/Users/coupang/Fastcamp/hwenv/lib/python3.5/site-packages/django/template/engine.py", line 190, in get_template
+    template, origin = self.find_template(template_name, dirs)
+  File "/Users/coupang/Fastcamp/hwenv/lib/python3.5/site-packages/django/template/engine.py", line 157, in find_template
+    name, template_dirs=dirs, skip=skip,
+  File "/Users/coupang/Fastcamp/hwenv/lib/python3.5/site-packages/django/template/loaders/base.py", line 46, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "/Users/coupang/Fastcamp/hwenv/lib/python3.5/site-packages/django/template/base.py", line 189, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/Users/coupang/Fastcamp/hwenv/lib/python3.5/site-packages/django/template/base.py", line 231, in compile_nodelist
+    return parser.parse()
+  File "/Users/coupang/Fastcamp/hwenv/lib/python3.5/site-packages/django/template/base.py", line 516, in parse
+    raise self.error(token, e)
+  File "/Users/coupang/Fastcamp/hwenv/lib/python3.5/site-packages/django/template/base.py", line 514, in parse
+    compiled_result = compile_func(self, token)
+  File "/Users/coupang/Fastcamp/hwenv/lib/python3.5/site-packages/django/template/defaulttags.py", line 886, in do_for
+    nodelist_loop = parser.parse(('empty', 'endfor',))
+  File "/Users/coupang/Fastcamp/hwenv/lib/python3.5/site-packages/django/template/base.py", line 521, in parse
+    self.unclosed_block_tag(parse_until)
+  File "/Users/coupang/Fastcamp/hwenv/lib/python3.5/site-packages/django/template/base.py", line 582, in unclosed_block_tag
+    raise self.error(token, msg)
+django.template.exceptions.TemplateSyntaxError: Unclosed tag on line 11: 'for'. Looking for one of: empty, endfor.
+WARNING 2016-03-12 08:38:39,574 views 44459 4345749504 warning message log
+ERROR 2016-03-12 08:38:40,484 base 44459 4345749504 Internal Server Error: /photos/3/
+Traceback (most recent call last):
+  File "/Users/coupang/Fastcamp/hwenv/lib/python3.5/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/coupang/Fastcamp/hwenv/lib/python3.5/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/coupang/Fastcamp/hwenv/pystagram/photos/views.py", line 24, in view_photo
+    messages.info('글 목록에 접근함')
+TypeError: info() missing 1 required positional argument: 'message'
+WARNING 2016-03-16 00:05:42,275 views 44473 4488286208 warning message log
+WARNING 2016-03-16 00:05:42,330 base 44473 4488286208 Not Found: /favicon.ico
+WARNING 2016-03-16 00:24:14,788 views 54184 4441542656 warning message log
+WARNING 2016-03-16 00:25:05,028 views 54184 4441542656 warning message log
+WARNING 2016-03-16 00:26:00,310 views 54343 4449669120 warning message log
+WARNING 2016-03-16 00:27:21,437 views 54356 4364488704 warning message log
+WARNING 2016-03-17 00:24:27,005 views 54356 4364488704 warning message log
+WARNING 2016-03-19 04:39:28,991 base 64622 4567191552 Not Found: /
+WARNING 2016-03-19 04:39:34,535 views 64622 4567191552 warning message log
+WARNING 2016-03-19 05:05:24,550 base 64872 4553891840 Not Found: /accounts/login/
+WARNING 2016-03-19 05:08:26,982 base 64872 4553891840 Not Found: /login/
+WARNING 2016-03-19 05:08:29,981 base 64872 4553891840 Not Found: /login/
+WARNING 2016-03-19 05:17:07,210 base 64872 4559933440 Not Found: /photos/3/like
+ERROR 2016-03-19 05:17:07,228 base 64872 4559933440 Internal Server Error: /photos/3/
+Traceback (most recent call last):
+  File "/Users/coupang/Fastcamp/hwenv/lib/python3.5/site-packages/django/template/defaulttags.py", line 1132, in find_library
+    return parser.libraries[name]
+KeyError: 'my_tags'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/coupang/Fastcamp/hwenv/lib/python3.5/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/coupang/Fastcamp/hwenv/lib/python3.5/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/coupang/Fastcamp/hwenv/pystagram/photos/views.py", line 29, in view_photo
+    return render(request, 'view_photo.html', ctx)
+  File "/Users/coupang/Fastcamp/hwenv/lib/python3.5/site-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/Users/coupang/Fastcamp/hwenv/lib/python3.5/site-packages/django/template/loader.py", line 96, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/Users/coupang/Fastcamp/hwenv/lib/python3.5/site-packages/django/template/loader.py", line 32, in get_template
+    return engine.get_template(template_name, dirs)
+  File "/Users/coupang/Fastcamp/hwenv/lib/python3.5/site-packages/django/template/backends/django.py", line 40, in get_template
+    return Template(self.engine.get_template(template_name, dirs), self)
+  File "/Users/coupang/Fastcamp/hwenv/lib/python3.5/site-packages/django/template/engine.py", line 190, in get_template
+    template, origin = self.find_template(template_name, dirs)
+  File "/Users/coupang/Fastcamp/hwenv/lib/python3.5/site-packages/django/template/engine.py", line 157, in find_template
+    name, template_dirs=dirs, skip=skip,
+  File "/Users/coupang/Fastcamp/hwenv/lib/python3.5/site-packages/django/template/loaders/base.py", line 46, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "/Users/coupang/Fastcamp/hwenv/lib/python3.5/site-packages/django/template/base.py", line 189, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/Users/coupang/Fastcamp/hwenv/lib/python3.5/site-packages/django/template/base.py", line 231, in compile_nodelist
+    return parser.parse()
+  File "/Users/coupang/Fastcamp/hwenv/lib/python3.5/site-packages/django/template/base.py", line 516, in parse
+    raise self.error(token, e)
+  File "/Users/coupang/Fastcamp/hwenv/lib/python3.5/site-packages/django/template/base.py", line 514, in parse
+    compiled_result = compile_func(self, token)
+  File "/Users/coupang/Fastcamp/hwenv/lib/python3.5/site-packages/django/template/defaulttags.py", line 1189, in load
+    lib = find_library(parser, name)
+  File "/Users/coupang/Fastcamp/hwenv/lib/python3.5/site-packages/django/template/defaulttags.py", line 1136, in find_library
+    name, "\n".join(sorted(parser.libraries.keys())),
+django.template.exceptions.TemplateSyntaxError: 'my_tags' is not a registered tag library. Must be one of:
+admin_list
+admin_modify
+admin_static
+admin_urls
+cache
+future
+i18n
+l10n
+log
+static
+staticfiles
+tz
+WARNING 2016-03-19 05:17:12,514 views 64872 4559933440 warning message log
+ERROR 2016-03-19 05:17:17,119 base 64872 4559933440 Internal Server Error: /photos/3/
+Traceback (most recent call last):
+  File "/Users/coupang/Fastcamp/hwenv/lib/python3.5/site-packages/django/template/defaulttags.py", line 1132, in find_library
+    return parser.libraries[name]
+KeyError: 'my_tags'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/coupang/Fastcamp/hwenv/lib/python3.5/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/coupang/Fastcamp/hwenv/lib/python3.5/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/coupang/Fastcamp/hwenv/pystagram/photos/views.py", line 29, in view_photo
+    return render(request, 'view_photo.html', ctx)
+  File "/Users/coupang/Fastcamp/hwenv/lib/python3.5/site-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/Users/coupang/Fastcamp/hwenv/lib/python3.5/site-packages/django/template/loader.py", line 96, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/Users/coupang/Fastcamp/hwenv/lib/python3.5/site-packages/django/template/loader.py", line 32, in get_template
+    return engine.get_template(template_name, dirs)
+  File "/Users/coupang/Fastcamp/hwenv/lib/python3.5/site-packages/django/template/backends/django.py", line 40, in get_template
+    return Template(self.engine.get_template(template_name, dirs), self)
+  File "/Users/coupang/Fastcamp/hwenv/lib/python3.5/site-packages/django/template/engine.py", line 190, in get_template
+    template, origin = self.find_template(template_name, dirs)
+  File "/Users/coupang/Fastcamp/hwenv/lib/python3.5/site-packages/django/template/engine.py", line 157, in find_template
+    name, template_dirs=dirs, skip=skip,
+  File "/Users/coupang/Fastcamp/hwenv/lib/python3.5/site-packages/django/template/loaders/base.py", line 46, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "/Users/coupang/Fastcamp/hwenv/lib/python3.5/site-packages/django/template/base.py", line 189, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/Users/coupang/Fastcamp/hwenv/lib/python3.5/site-packages/django/template/base.py", line 231, in compile_nodelist
+    return parser.parse()
+  File "/Users/coupang/Fastcamp/hwenv/lib/python3.5/site-packages/django/template/base.py", line 516, in parse
+    raise self.error(token, e)
+  File "/Users/coupang/Fastcamp/hwenv/lib/python3.5/site-packages/django/template/base.py", line 514, in parse
+    compiled_result = compile_func(self, token)
+  File "/Users/coupang/Fastcamp/hwenv/lib/python3.5/site-packages/django/template/defaulttags.py", line 1189, in load
+    lib = find_library(parser, name)
+  File "/Users/coupang/Fastcamp/hwenv/lib/python3.5/site-packages/django/template/defaulttags.py", line 1136, in find_library
+    name, "\n".join(sorted(parser.libraries.keys())),
+django.template.exceptions.TemplateSyntaxError: 'my_tags' is not a registered tag library. Must be one of:
+admin_list
+admin_modify
+admin_static
+admin_urls
+cache
+future
+i18n
+l10n
+log
+static
+staticfiles
+tz
+ERROR 2016-03-19 05:24:15,795 base 65019 4415520768 Internal Server Error: /photos/3/like/
+Traceback (most recent call last):
+  File "/Users/coupang/Fastcamp/hwenv/lib/python3.5/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/coupang/Fastcamp/hwenv/lib/python3.5/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/coupang/Fastcamp/hwenv/lib/python3.5/site-packages/django/contrib/auth/decorators.py", line 23, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/Users/coupang/Fastcamp/hwenv/pystagram/photos/views.py", line 51, in like_photo
+    messages.info(reqeust, '좋아요 취소')
+NameError: name 'reqeust' is not defined
+ERROR 2016-03-19 08:29:50,457 base 66933 4339810304 Internal Server Error: /admin/photos/photo/add/
+Traceback (most recent call last):
+  File "/Users/coupang/Fastcamp/hwenv/lib/python3.5/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/coupang/Fastcamp/hwenv/lib/python3.5/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/coupang/Fastcamp/hwenv/lib/python3.5/site-packages/django/contrib/admin/options.py", line 541, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/Users/coupang/Fastcamp/hwenv/lib/python3.5/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Users/coupang/Fastcamp/hwenv/lib/python3.5/site-packages/django/views/decorators/cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/Users/coupang/Fastcamp/hwenv/lib/python3.5/site-packages/django/contrib/admin/sites.py", line 244, in inner
+    return view(request, *args, **kwargs)
+  File "/Users/coupang/Fastcamp/hwenv/lib/python3.5/site-packages/django/contrib/admin/options.py", line 1437, in add_view
+    return self.changeform_view(request, None, form_url, extra_context)
+  File "/Users/coupang/Fastcamp/hwenv/lib/python3.5/site-packages/django/utils/decorators.py", line 67, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "/Users/coupang/Fastcamp/hwenv/lib/python3.5/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Users/coupang/Fastcamp/hwenv/lib/python3.5/site-packages/django/utils/decorators.py", line 63, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "/usr/local/Cellar/python3/3.5.1/Frameworks/Python.framework/Versions/3.5/lib/python3.5/contextlib.py", line 30, in inner
+    return func(*args, **kwds)
+  File "/Users/coupang/Fastcamp/hwenv/lib/python3.5/site-packages/django/contrib/admin/options.py", line 1378, in changeform_view
+    self.save_model(request, new_object, form, not add)
+  File "/Users/coupang/Fastcamp/hwenv/lib/python3.5/site-packages/django/contrib/admin/options.py", line 991, in save_model
+    obj.save()
+  File "/Users/coupang/Fastcamp/hwenv/lib/python3.5/site-packages/django/db/models/base.py", line 700, in save
+    force_update=force_update, update_fields=update_fields)
+  File "/Users/coupang/Fastcamp/hwenv/lib/python3.5/site-packages/django/db/models/base.py", line 737, in save_base
+    update_fields=update_fields, raw=raw, using=using)
+  File "/Users/coupang/Fastcamp/hwenv/lib/python3.5/site-packages/django/dispatch/dispatcher.py", line 192, in send
+    response = receiver(signal=self, sender=sender, **named)
+  File "/Users/coupang/Fastcamp/hwenv/pystagram/photos/models.py", line 23, in make_thumbnail_image
+    make_thumbnail(instance.image.path, 80, 80)
+  File "/Users/coupang/Fastcamp/hwenv/lib/python3.5/site-packages/celery/local.py", line 188, in __call__
+    return self._get_current_object()(*a, **kw)
+  File "/Users/coupang/Fastcamp/hwenv/lib/python3.5/site-packages/celery/app/task.py", line 420, in __call__
+    return self.run(*args, **kwargs)
+  File "/Users/coupang/Fastcamp/hwenv/pystagram/taskqueue.py", line 15, in make_thumbnail
+    filepath, ext = os.path.splitext(path)
+NameError: name 'os' is not defined
+WARNING 2016-03-19 09:09:58,374 base 67668 4599332864 Not Found: /restapi
+ERROR 2016-03-19 09:09:58,386 base 67668 4599332864 Internal Server Error: /restapi/
+Traceback (most recent call last):
+  File "/Users/coupang/Fastcamp/hwenv/lib/python3.5/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/coupang/Fastcamp/hwenv/lib/python3.5/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/coupang/Fastcamp/hwenv/lib/python3.5/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/coupang/Fastcamp/hwenv/lib/python3.5/site-packages/rest_framework/viewsets.py", line 87, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/coupang/Fastcamp/hwenv/lib/python3.5/site-packages/rest_framework/views.py", line 466, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/coupang/Fastcamp/hwenv/lib/python3.5/site-packages/rest_framework/views.py", line 463, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/coupang/Fastcamp/hwenv/lib/python3.5/site-packages/rest_framework/mixins.py", line 48, in list
+    return Response(serializer.data)
+  File "/Users/coupang/Fastcamp/hwenv/lib/python3.5/site-packages/rest_framework/serializers.py", line 674, in data
+    ret = super(ListSerializer, self).data
+  File "/Users/coupang/Fastcamp/hwenv/lib/python3.5/site-packages/rest_framework/serializers.py", line 239, in data
+    self._data = self.to_representation(self.instance)
+  File "/Users/coupang/Fastcamp/hwenv/lib/python3.5/site-packages/rest_framework/serializers.py", line 614, in to_representation
+    self.child.to_representation(item) for item in iterable
+  File "/Users/coupang/Fastcamp/hwenv/lib/python3.5/site-packages/rest_framework/serializers.py", line 614, in <listcomp>
+    self.child.to_representation(item) for item in iterable
+  File "/Users/coupang/Fastcamp/hwenv/lib/python3.5/site-packages/rest_framework/serializers.py", line 459, in to_representation
+    fields = self._readable_fields
+  File "/Users/coupang/Fastcamp/hwenv/lib/python3.5/site-packages/django/utils/functional.py", line 33, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/Users/coupang/Fastcamp/hwenv/lib/python3.5/site-packages/rest_framework/serializers.py", line 353, in _readable_fields
+    field for field in self.fields.values()
+  File "/Users/coupang/Fastcamp/hwenv/lib/python3.5/site-packages/rest_framework/serializers.py", line 339, in fields
+    for key, value in self.get_fields().items():
+  File "/Users/coupang/Fastcamp/hwenv/lib/python3.5/site-packages/rest_framework/serializers.py", line 939, in get_fields
+    field_name, info, model, depth
+  File "/Users/coupang/Fastcamp/hwenv/lib/python3.5/site-packages/rest_framework/serializers.py", line 1076, in build_field
+    return self.build_unknown_field(field_name, model_class)
+  File "/Users/coupang/Fastcamp/hwenv/lib/python3.5/site-packages/rest_framework/serializers.py", line 1182, in build_unknown_field
+    (field_name, model_class.__name__)
+django.core.exceptions.ImproperlyConfigured: Field name `description` is not valid for model `Photo`.
+WARNING 2016-03-22 14:28:13,686 views 76841 4430606336 warning message log
+WARNING 2016-03-22 14:29:32,296 views 76841 4430606336 warning message log
+WARNING 2016-03-22 14:29:36,743 base 76841 4430606336 Not Found: /photos/upload
+ERROR 2016-03-22 14:29:36,753 base 76841 4430606336 Internal Server Error: /photos/upload/
+Traceback (most recent call last):
+  File "/Users/coupang/Fastcamp/hwenv/lib/python3.5/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/coupang/Fastcamp/hwenv/lib/python3.5/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/coupang/Fastcamp/hwenv/lib/python3.5/site-packages/django/contrib/auth/decorators.py", line 23, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/Users/coupang/Fastcamp/hwenv/pystagram/photos/views.py", line 97, in photo_upload
+    'form' : form_instance,
+UnboundLocalError: local variable 'form_instance' referenced before assignment
+ERROR 2016-03-22 14:30:13,418 base 76886 4551704576 Internal Server Error: /photos/upload/
+Traceback (most recent call last):
+  File "/Users/coupang/Fastcamp/hwenv/lib/python3.5/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/coupang/Fastcamp/hwenv/lib/python3.5/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/coupang/Fastcamp/hwenv/lib/python3.5/site-packages/django/contrib/auth/decorators.py", line 23, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/Users/coupang/Fastcamp/hwenv/pystagram/photos/views.py", line 90, in photo_upload
+    form_instance = ImageForm(request.POST, request.FILE)
+AttributeError: 'WSGIRequest' object has no attribute 'FILE'
+ERROR 2016-03-22 14:35:07,461 base 76935 4514373632 Internal Server Error: /photos/upload/
+Traceback (most recent call last):
+  File "/Users/coupang/Fastcamp/hwenv/lib/python3.5/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/coupang/Fastcamp/hwenv/lib/python3.5/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/coupang/Fastcamp/hwenv/lib/python3.5/site-packages/django/contrib/auth/decorators.py", line 23, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/Users/coupang/Fastcamp/hwenv/pystagram/photos/views.py", line 98, in photo_upload
+    'form' : form_instance,
+  File "/Users/coupang/Fastcamp/hwenv/lib/python3.5/site-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/Users/coupang/Fastcamp/hwenv/lib/python3.5/site-packages/django/template/loader.py", line 96, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/Users/coupang/Fastcamp/hwenv/lib/python3.5/site-packages/django/template/loader.py", line 43, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: photos:photo_upload
+ERROR 2016-03-22 14:37:13,919 base 76953 4445761536 Internal Server Error: /photos/upload/
+Traceback (most recent call last):
+  File "/Users/coupang/Fastcamp/hwenv/lib/python3.5/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/coupang/Fastcamp/hwenv/lib/python3.5/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/coupang/Fastcamp/hwenv/lib/python3.5/site-packages/django/contrib/auth/decorators.py", line 23, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/Users/coupang/Fastcamp/hwenv/pystagram/photos/views.py", line 98, in photo_upload
+    'form' : form_instance,
+  File "/Users/coupang/Fastcamp/hwenv/lib/python3.5/site-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/Users/coupang/Fastcamp/hwenv/lib/python3.5/site-packages/django/template/loader.py", line 96, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/Users/coupang/Fastcamp/hwenv/lib/python3.5/site-packages/django/template/loader.py", line 43, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: photo_upload
+ERROR 2016-03-22 14:59:41,454 base 77144 4351766528 Internal Server Error: /photos/upload/
+Traceback (most recent call last):
+  File "/Users/coupang/Fastcamp/hwenv/lib/python3.5/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/coupang/Fastcamp/hwenv/lib/python3.5/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/coupang/Fastcamp/hwenv/lib/python3.5/site-packages/django/contrib/auth/decorators.py", line 23, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/Users/coupang/Fastcamp/hwenv/pystagram/photos/views.py", line 89, in create_photo
+    'form' : form,
+  File "/Users/coupang/Fastcamp/hwenv/lib/python3.5/site-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/Users/coupang/Fastcamp/hwenv/lib/python3.5/site-packages/django/template/loader.py", line 96, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/Users/coupang/Fastcamp/hwenv/lib/python3.5/site-packages/django/template/loader.py", line 43, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: photo_upload
+ERROR 2016-03-22 15:24:34,221 base 77166 4470640640 Internal Server Error: /photos/upload/
+Traceback (most recent call last):
+  File "/Users/coupang/Fastcamp/hwenv/lib/python3.5/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/coupang/Fastcamp/hwenv/lib/python3.5/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/coupang/Fastcamp/hwenv/lib/python3.5/site-packages/django/contrib/auth/decorators.py", line 23, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/Users/coupang/Fastcamp/hwenv/pystagram/photos/views.py", line 89, in create_photo
+    'form' : form,
+  File "/Users/coupang/Fastcamp/hwenv/lib/python3.5/site-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/Users/coupang/Fastcamp/hwenv/lib/python3.5/site-packages/django/template/loader.py", line 96, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/Users/coupang/Fastcamp/hwenv/lib/python3.5/site-packages/django/template/loader.py", line 43, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: photos:photo_upload
+ERROR 2016-03-22 15:27:15,857 base 77301 4444282880 Internal Server Error: /photos/upload/
+Traceback (most recent call last):
+  File "/Users/coupang/Fastcamp/hwenv/lib/python3.5/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/coupang/Fastcamp/hwenv/lib/python3.5/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/coupang/Fastcamp/hwenv/lib/python3.5/site-packages/django/contrib/auth/decorators.py", line 23, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/Users/coupang/Fastcamp/hwenv/pystagram/photos/views.py", line 89, in create_photo
+    'form' : form,
+  File "/Users/coupang/Fastcamp/hwenv/lib/python3.5/site-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/Users/coupang/Fastcamp/hwenv/lib/python3.5/site-packages/django/template/loader.py", line 96, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/Users/coupang/Fastcamp/hwenv/lib/python3.5/site-packages/django/template/loader.py", line 43, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: photos:photo_upload
+ERROR 2016-03-22 15:28:57,978 base 77324 4542554112 Internal Server Error: /photos/upload/
+Traceback (most recent call last):
+  File "/Users/coupang/Fastcamp/hwenv/lib/python3.5/site-packages/django/core/handlers/base.py", line 158, in get_response
+    % (callback.__module__, view_name))
+ValueError: The view photos.views.photo_upload didn't return an HttpResponse object. It returned None instead.
+ERROR 2016-03-22 15:30:17,506 base 77345 4547514368 Internal Server Error: /photos/upload/
+Traceback (most recent call last):
+  File "/Users/coupang/Fastcamp/hwenv/lib/python3.5/site-packages/django/core/handlers/base.py", line 158, in get_response
+    % (callback.__module__, view_name))
+ValueError: The view photos.views.photo_upload didn't return an HttpResponse object. It returned None instead.
+ERROR 2016-03-22 15:37:21,271 base 77397 4526448640 Internal Server Error: /photos/upload/
+Traceback (most recent call last):
+  File "/Users/coupang/Fastcamp/hwenv/lib/python3.5/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/coupang/Fastcamp/hwenv/lib/python3.5/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/coupang/Fastcamp/hwenv/lib/python3.5/site-packages/django/contrib/auth/decorators.py", line 23, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/Users/coupang/Fastcamp/hwenv/pystagram/photos/views.py", line 95, in photo_upload
+    form_instance = ImageForm(request.POST, request.FILE)
+AttributeError: 'WSGIRequest' object has no attribute 'FILE'
+WARNING 2016-03-22 15:39:22,237 views 77414 4514398208 warning message log
+ERROR 2016-03-22 15:48:58,049 base 77517 4590489600 Internal Server Error: /photos/upload/
+Traceback (most recent call last):
+  File "/Users/coupang/Fastcamp/hwenv/lib/python3.5/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/coupang/Fastcamp/hwenv/lib/python3.5/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/coupang/Fastcamp/hwenv/lib/python3.5/site-packages/django/contrib/auth/decorators.py", line 23, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/Users/coupang/Fastcamp/hwenv/pystagram/photos/views.py", line 100, in photo_upload
+    photo.save()
+  File "/Users/coupang/Fastcamp/hwenv/lib/python3.5/site-packages/django/db/models/base.py", line 700, in save
+    force_update=force_update, update_fields=update_fields)
+  File "/Users/coupang/Fastcamp/hwenv/lib/python3.5/site-packages/django/db/models/base.py", line 737, in save_base
+    update_fields=update_fields, raw=raw, using=using)
+  File "/Users/coupang/Fastcamp/hwenv/lib/python3.5/site-packages/django/dispatch/dispatcher.py", line 192, in send
+    response = receiver(signal=self, sender=sender, **named)
+  File "/Users/coupang/Fastcamp/hwenv/pystagram/photos/models.py", line 23, in make_thumbnail_image
+    make_thumbnail.delay(instance.image.path, 80, 80)
+  File "/Users/coupang/Fastcamp/hwenv/lib/python3.5/site-packages/django/db/models/fields/files.py", line 63, in _get_path
+    self._require_file()
+  File "/Users/coupang/Fastcamp/hwenv/lib/python3.5/site-packages/django/db/models/fields/files.py", line 46, in _require_file
+    raise ValueError("The '%s' attribute has no file associated with it." % self.field.name)
+ValueError: The 'image' attribute has no file associated with it.
+ERROR 2016-03-22 15:51:17,810 base 77539 4429979648 Internal Server Error: /photos/6/
+Traceback (most recent call last):
+  File "/Users/coupang/Fastcamp/hwenv/lib/python3.5/site-packages/django/template/base.py", line 883, in _resolve_lookup
+    current = current[bit]
+TypeError: 'ImageFieldFile' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/coupang/Fastcamp/hwenv/lib/python3.5/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/coupang/Fastcamp/hwenv/lib/python3.5/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/coupang/Fastcamp/hwenv/pystagram/photos/views.py", line 42, in view_photo
+    return render(request, 'view_photo.html', ctx)
+  File "/Users/coupang/Fastcamp/hwenv/lib/python3.5/site-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/Users/coupang/Fastcamp/hwenv/lib/python3.5/site-packages/django/template/loader.py", line 97, in render_to_string
+    return template.render(context, request)
+  File "/Users/coupang/Fastcamp/hwenv/lib/python3.5/site-packages/django/template/backends/django.py", line 95, in render
+    return self.template.render(context)
+  File "/Users/coupang/Fastcamp/hwenv/lib/python3.5/site-packages/django/template/base.py", line 206, in render
+    return self._render(context)
+  File "/Users/coupang/Fastcamp/hwenv/lib/python3.5/site-packages/django/template/base.py", line 197, in _render
+    return self.nodelist.render(context)
+  File "/Users/coupang/Fastcamp/hwenv/lib/python3.5/site-packages/django/template/base.py", line 992, in render
+    bit = node.render_annotated(context)
+  File "/Users/coupang/Fastcamp/hwenv/lib/python3.5/site-packages/django/template/base.py", line 959, in render_annotated
+    return self.render(context)
+  File "/Users/coupang/Fastcamp/hwenv/lib/python3.5/site-packages/django/template/base.py", line 1043, in render
+    output = self.filter_expression.resolve(context)
+  File "/Users/coupang/Fastcamp/hwenv/lib/python3.5/site-packages/django/template/base.py", line 709, in resolve
+    obj = self.var.resolve(context)
+  File "/Users/coupang/Fastcamp/hwenv/lib/python3.5/site-packages/django/template/base.py", line 850, in resolve
+    value = self._resolve_lookup(context)
+  File "/Users/coupang/Fastcamp/hwenv/lib/python3.5/site-packages/django/template/base.py", line 891, in _resolve_lookup
+    current = getattr(current, bit)
+  File "/Users/coupang/Fastcamp/hwenv/lib/python3.5/site-packages/django/db/models/fields/files.py", line 68, in _get_url
+    self._require_file()
+  File "/Users/coupang/Fastcamp/hwenv/lib/python3.5/site-packages/django/db/models/fields/files.py", line 46, in _require_file
+    raise ValueError("The '%s' attribute has no file associated with it." % self.field.name)
+ValueError: The 'image' attribute has no file associated with it.
+WARNING 2016-03-22 15:51:53,807 views 77539 4429979648 warning message log
+ERROR 2016-03-22 15:51:53,812 base 77539 4429979648 Internal Server Error: /photos/
+Traceback (most recent call last):
+  File "/Users/coupang/Fastcamp/hwenv/lib/python3.5/site-packages/django/template/base.py", line 883, in _resolve_lookup
+    current = current[bit]
+TypeError: 'ImageFieldFile' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/coupang/Fastcamp/hwenv/lib/python3.5/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/coupang/Fastcamp/hwenv/lib/python3.5/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/coupang/Fastcamp/hwenv/pystagram/photos/views.py", line 34, in toppage
+    return render(request, 'toppage.html', ctx)
+  File "/Users/coupang/Fastcamp/hwenv/lib/python3.5/site-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/Users/coupang/Fastcamp/hwenv/lib/python3.5/site-packages/django/template/loader.py", line 97, in render_to_string
+    return template.render(context, request)
+  File "/Users/coupang/Fastcamp/hwenv/lib/python3.5/site-packages/django/template/backends/django.py", line 95, in render
+    return self.template.render(context)
+  File "/Users/coupang/Fastcamp/hwenv/lib/python3.5/site-packages/django/template/base.py", line 206, in render
+    return self._render(context)
+  File "/Users/coupang/Fastcamp/hwenv/lib/python3.5/site-packages/django/template/base.py", line 197, in _render
+    return self.nodelist.render(context)
+  File "/Users/coupang/Fastcamp/hwenv/lib/python3.5/site-packages/django/template/base.py", line 992, in render
+    bit = node.render_annotated(context)
+  File "/Users/coupang/Fastcamp/hwenv/lib/python3.5/site-packages/django/template/base.py", line 959, in render_annotated
+    return self.render(context)
+  File "/Users/coupang/Fastcamp/hwenv/lib/python3.5/site-packages/django/template/defaulttags.py", line 220, in render
+    nodelist.append(node.render_annotated(context))
+  File "/Users/coupang/Fastcamp/hwenv/lib/python3.5/site-packages/django/template/base.py", line 959, in render_annotated
+    return self.render(context)
+  File "/Users/coupang/Fastcamp/hwenv/lib/python3.5/site-packages/django/template/base.py", line 1043, in render
+    output = self.filter_expression.resolve(context)
+  File "/Users/coupang/Fastcamp/hwenv/lib/python3.5/site-packages/django/template/base.py", line 709, in resolve
+    obj = self.var.resolve(context)
+  File "/Users/coupang/Fastcamp/hwenv/lib/python3.5/site-packages/django/template/base.py", line 850, in resolve
+    value = self._resolve_lookup(context)
+  File "/Users/coupang/Fastcamp/hwenv/lib/python3.5/site-packages/django/template/base.py", line 891, in _resolve_lookup
+    current = getattr(current, bit)
+  File "/Users/coupang/Fastcamp/hwenv/lib/python3.5/site-packages/django/db/models/fields/files.py", line 68, in _get_url
+    self._require_file()
+  File "/Users/coupang/Fastcamp/hwenv/lib/python3.5/site-packages/django/db/models/fields/files.py", line 46, in _require_file
+    raise ValueError("The '%s' attribute has no file associated with it." % self.field.name)
+ValueError: The 'image' attribute has no file associated with it.
+WARNING 2016-03-25 03:29:17,354 views 5883 4535402496 warning message log
+WARNING 2016-03-25 03:29:17,424 base 5883 4535402496 Not Found: /favicon.ico
